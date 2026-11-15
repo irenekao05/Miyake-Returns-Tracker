@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+
+# Local config and credentials
+.env
+.env.*
+!.env.example
+private.properties
+service-account*.json
+*.pem
+*.key
+
+# Database exports and backups
+/backend/bento_returns.sql
+/backend/returns.sql
+*.dump
+/backups/

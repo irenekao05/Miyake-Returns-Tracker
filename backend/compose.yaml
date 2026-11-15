@@ -1,0 +1,14 @@
+services:
+  db:
+    image: postgres:17
+    environment:
+      POSTGRES_DB: bento_returns
+      POSTGRES_USER: bento
+      POSTGRES_PASSWORD: local_dev_password
+    ports:
+      - '127.0.0.1:5432:5432'
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
